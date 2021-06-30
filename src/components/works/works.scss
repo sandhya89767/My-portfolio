@@ -1,0 +1,159 @@
+@import "../../global.scss";
+
+
+.works{
+    background-image: 	url("https://www.w3schools.com/howto/img_parallax.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: bisque;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+    .leftarrow{
+        width:40%;
+        height:50px;
+        
+        position:absolute;
+        left:50px;
+        cursor: pointer;
+        @include mobile{
+            display: none;
+        }
+    
+      
+    }
+    .rightArrow{
+        width:40%;
+        transform: rotateY(-180deg);
+        height:50px;
+        position: absolute;
+       
+        right: 50px;
+        cursor: pointer;
+        @include mobile{
+            display: none;
+        }
+    }
+    .slider{
+        height:450px;
+        display:flex;
+        position:absolute;
+        left:0;
+        transition: all  1s ease;
+     
+        @include mobile{
+            height: 100vh;
+            flex-direction: column;
+            justify-content: center;
+        }
+      
+        
+        .container{
+            border-radius: 10% 0% 25% 25%;
+            border-top-left-radius: 40%;
+            background-color: rgb(170, 145, 5);
+           
+           width:100vw;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+         
+           .item{
+               background-color: azure;
+               height: 100%;
+               border-radius: 20px;
+               width: 900px;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               @include mobile{
+                   width: 90%;
+                   height: 100px;
+                   margin: 5px 0px;
+               }
+               .left{
+                      height: 80%;
+                      flex:5;
+                      margin-left: 20px;
+                      flex-wrap: wrap;
+                      flex-direction: column;
+                      @include mobile{
+                          margin: 2px;
+                      }
+                     
+                      .leftContainer{
+                          width:90%;
+                          height:100%;
+                          display: flex;
+                          flex-direction: column;
+                          justify-content: space-between;
+                         
+                          .imgContainer{
+                              width: 40px;
+                              background-color: white;
+                              border-radius: 50%;
+                              background-color: coral;
+                              display: flex;
+                              align-items: center;
+                              justify-content: center;
+                              
+                              
+                              img{
+                                  transform: rotateY(10 deg);
+                                  width:25px;
+                                  @include mobile{
+                                    display: none;
+                                }
+                            
+                              }
+                          }
+                          h2
+                          {
+                            font-size: 30px;
+                            font-weight: 600;
+                            color: darkblue;
+                            width: fit-content;
+                            text-overflow: ellipsis;
+                            margin-bottom: 20px;
+                            text-decoration: underline;
+                            z-index: 2;
+                            word-wrap: break-word;
+                            @include mobile{
+                                font-size: 10px;
+                                font-weight: 400;
+                                height: 100%;
+                            }
+                          }
+                       
+                          p{
+                              height: 100%;
+                              font-size: 18px;
+                              color:black;
+                              @include mobile{
+                                font-size: 5px;
+                                font-weight: 200;
+                            }
+                          }
+                      }
+               }
+               .right{
+                   height:80%;
+                   flex:8;
+                   
+                   display: flex;
+                   align-items: center;
+                   justify-content: center;
+                   overflow: hidden;
+                   img{
+                       width:400px;
+                    
+                   }
+               }
+           }
+   
+        }
+    
+     
+    }
+}

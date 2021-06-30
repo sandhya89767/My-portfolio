@@ -1,0 +1,203 @@
+.about{
+   
+ 
+    background-color:white;
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+   
+  .container {
+    background-color: white;
+     flex:2;
+    text-align: center; 
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    }
+ .left{
+     background-color: black;
+     flex:2;
+     width: 100%;
+     margin-left: 20%;
+     height:5%;
+     
+ }
+ 
+ img{
+     height: 98%;
+    
+ }
+    
+    #s {
+        border: 10px solid white;
+        border-bottom: 10px solid white;
+        transform: rotateY(-10deg);
+
+        position: relative;
+        font-weight: bold;
+        font-size: 100px;
+       color: black;
+        display: inline-block;
+        height:100%;
+        width: 100%;
+        border-color: black;
+        border-width:3px;
+        padding-bottom: 100px;
+     
+    }
+    
+    .right{
+        width: 100%;
+        height: 5%;
+        background-color: black;
+        flex:3;
+        width: 100%;
+        margin-right: 20%;
+    }
+    .middle{
+       
+        width:90%;
+        height: 100%;
+        flex:4;
+        border-top-left-radius: 10%;
+        border-top-right-radius: 10%;
+        border-bottom-left-radius: 10%;
+        border-bottom-right-radius: 10%;
+        
+        box-sizing: 50px 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items:center;
+       
+        .imageContainer{
+            flex: 0;
+            width: 100%;
+            height: 100%;
+            margin:0;
+            padding: 0;
+            justify-content: center;
+
+         
+       
+      
+    }
+    .content{
+       // background-color: rgb(206, 228, 206);
+      
+        flex:3;
+        margin-top: 80px;
+        margin-left: 40px;
+        
+       
+        height: 100%;
+        width: 90%;
+        border-radius: 10% 10% 10% 10%;
+        border-bottom-left-radius: 30%;
+        
+       
+       
+        p{
+            
+            color: crimson;
+           font-size: 18px;
+           font-family: 'Courgette', cursive;;
+           line-height: 1.6;
+            margin:20px;
+            padding: 0;
+            word-spacing: 5px;
+           
+            
+        }
+      
+    }
+
+    }
+    .bottom{
+        border-radius: 10% 10% 10% 10% ;
+      background-color: white;
+
+        margin-top: 20px;
+
+        flex:4;
+     
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+        .bottomLeft{
+            h3{
+                margin-left: 50px;
+                color:black;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bolder;
+                font-size: 33px;
+                
+            }
+            
+            flex:1;
+        
+            height: 100%;
+            width: 100%;
+            display: flex;
+            
+            align-items: center;
+            flex-direction: column;
+            ul{
+                display: flex;
+                flex-direction: row;
+                margin: 10px;
+               
+                li{
+                    color: blue;
+                    margin: 10px;
+                    
+                    img{
+                        width: 100%;
+                        height:100%;
+                        
+
+                    }
+                }
+            }
+
+
+        }
+        .bottomRight{
+            margin-left: 100px;
+            h1{
+                color: black;
+            }
+            flex:2;
+           color: blue
+           (38, 0, 255);
+            height: 100%;
+            width: 100%;
+            font-weight: 800;
+
+        }
+        .education{
+            margin-left: 100px;
+            h1{
+                color: black;
+            }
+            flex:2;
+           color: blue
+           (38, 0, 255);
+            height: 100%;
+            width: 100%;
+            font-weight: 800;
+
+        }
+    }
+}
