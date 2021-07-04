@@ -14,6 +14,9 @@
 
    
     .left{
+        @include mobile{
+            flex: 0;
+        }
         flex:1;
         background-color:rgb(255, 240, 250); 
         background-image: url("https://static.wixstatic.com/media/ed0995_1a05ad512bc14fff86c618ee703b634c~mv2.gif");

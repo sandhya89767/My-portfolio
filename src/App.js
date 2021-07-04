@@ -8,6 +8,7 @@ import About from "./components/about/About"
 import "./app.scss"
 import { useState } from "react";
 import Menu from "./components/Menu/menu"
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 function App() {
   const [menuOpen, setmenuOpen] = useState(false);
@@ -18,7 +19,9 @@ function App() {
      <Menu menu={menuOpen} setmenu={setmenuOpen}/>
      <div className="sections">
        <Intro/>
+       <ParallaxProvider>
        <About/>
+       </ParallaxProvider>
        <Portfolio/>
        <Works/>
        <Testimonials/>

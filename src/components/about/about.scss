@@ -1,3 +1,6 @@
+@import "../../global.scss";
+
+
 .about{
    
  
@@ -8,9 +11,12 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
+overflow: scroll;
+
+  
    
   .container {
-    background-color: yellow;
+    background-color:rgb(228, 228, 183);
      flex:2;
     text-align: center; 
     height: 80%;
@@ -88,17 +94,26 @@
                 margin-left: 0px;
                 margin-top:0px;
                 padding: 0;
+                @include mobile{
+                    display: none;
+                }
 
             }
             
-            color: yellow;
+            color: rgb(228, 228, 183);
            font-size: 18px;
            font-family: 'Courgette', cursive;;
            line-height: 1.6;
             margin:20px;
             padding: 0;
             word-spacing: 5px;
-           
+            overflow: none;
+           @include mobile{
+            overflow: scroll;
+            -webkit-overflow-scrolling: touch;
+           }
+     
+        
             
         }
       
@@ -107,7 +122,9 @@
     }
     .bottom{
         border-radius: 10% 10% 10% 10% ;
-      background-color: yellow;
+     
+
+      background-color: rgb(228, 228, 183);
 
         margin-top: 20px;
 
@@ -118,8 +135,20 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        @include mobile{
+            border-radius: 1%;
+            flex-direction: column;
+           overflow-y: scroll;
+            margin-top: 2px;
+            
+           
+           
+        }
        
         .bottomLeft{
+            @include mobile{
+                flex:0;
+            }
             h3{
                 margin-left: 50px;
                 color:black;
@@ -127,6 +156,13 @@
                 font-weight: bolder;
                 font-size: 33px;
                 
+                @include mobile{
+                    display: none;
+                    flex:0;
+                    margin-left: 10px;
+                    font-weight: 300;
+                    font-size: 13px;
+                }
             }
             
             flex:1;
@@ -141,14 +177,23 @@
                 display: flex;
                 flex-direction: row;
                 margin: 10px;
+                @include mobile{
+                    margin: 1px;
+                }
                
                 li{
                     color: blue;
                     margin: 10px;
+                    @include mobile{
+                        margin: 1px;
+                    }
                     
                     img{
                         width: 100%;
                         height:100%;
+                        @include mobile{
+                            display: none;
+                        }
                         
 
                     }
@@ -158,22 +203,48 @@
 
         }
         .bottomRight{
-            margin-left: 100px;
+   margin-left: 100px;
+   @include mobile{
+       margin-left: 2px;
+    font-size: 13px;
+    font-weight: 100;
+   
+  
+    
+}
+}
             h1{
                 color: black;
-            }
+            
             flex:2;
            color: blue
            (38, 0, 255);
             height: 100%;
             width: 100%;
             font-weight: 800;
+            @include mobile{
+                width: 100%;
+                font-size: 18px;
+                height: 8%;
+                overflow-y:scroll;
+                 scroll-behavior: smooth;
+            }
+         
+       
 
         }
         .education{
             margin-left: 100px;
+            @include mobile{
+                margin-left: 2px;
+                scroll-behavior: smooth;
+                overflow: scroll;
+            }
             h1{
                 color: black;
+                @include mobile{
+                    font-size: 13px;
+                }
             }
             flex:2;
            color: blue
@@ -181,6 +252,9 @@
             height: 100%;
             width: 100%;
             font-weight: 800;
+            @include mobile{
+                font-weight: 300;
+            }
 
         }
     }

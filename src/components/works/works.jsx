@@ -3,7 +3,9 @@ import "./works.scss"
 import{useEffect,useState} from "react";
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import {projects} from '../Data';
+import { Button } from 'reactstrap';
 export default function Works() {
+    var arr = [];
     const data =projects;
    const [currentSlide,setSlide]=useState(0);
      const handleClick = (way)=>{
@@ -25,6 +27,7 @@ export default function Works() {
 
 };
 
+
     return (
     <div className="works" id="works">
         <div className="slider" style={{transform:`translateX(-${currentSlide*100}vw) `}}>
@@ -33,18 +36,32 @@ export default function Works() {
                 <div className="item">
 
                     <div className="left">
-                        <div className="leftContainer">
-                        <div className="imgContainer">
-                            <img src="assets/girl3.jpg"></img>
-                        </div>
+                       <div className="content">
+                       
                         <h2> {d.title}</h2>
                         <p>
                             {d.Description}
+                            <h1>Skills Used</h1>
                         </p>
-                        <span>Projects</span>
+                        
+                        </div>
+                       
+                       
+                       <div className="buttons">
+                      
+                            {d.skills&&d.skills.map(function (skill, i) { 
+												return <div key={i}>
+                                                 
+                                                 <Button color="dange">{skill}</Button>{' '}
+                                                  
+												</div>
+											})}
+                                            </div>
+                          
+                       
                          
 
-                        </div>
+                        
 
                     </div>
                     <div className="right">

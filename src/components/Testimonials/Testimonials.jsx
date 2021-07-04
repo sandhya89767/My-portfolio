@@ -16,10 +16,11 @@ export default function Testimonials() {
                 <div className="card">
                     <div className="top">
                         <div className="topimages">
+                   
                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAnDM9N2H0WHUDyI5lR805VcyQVKAuPjHG-A&usqp=CAU" alt="" className="left"/>
                      <img className="user"  src={d.img} alt=""/>
                      </div>
-                    
+                    <span className="company"><h2> Company:{d.company}</h2></span>
                      <span><h3>{d.Title}</h3></span>
                      
                     </div>

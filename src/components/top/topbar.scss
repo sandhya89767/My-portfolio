@@ -40,6 +40,11 @@
                 color: inherit;
                 margin: 5px;
                 font-weight: bolder;
+                @include mobile{
+                    font-size: 13px;
+                    margin: 1px;
+                    font-weight: 500;
+                }
             }
         }
         .right{
@@ -53,6 +58,10 @@
                 font-weight: 600;
                 justify-content: center;
                  align-items: center;
+                 @include mobile{
+                     font-weight: 300;
+                     font-size: 13px;
+                 }
               
 
                 &.active{
@@ -61,8 +70,12 @@
                 a{
                     color:white;
                     margin-left: 100px;
+                    @include mobile{
+                        margin-left: 2px;
+                    }
+    
                 }
-
+               
             }
             .hamburger{
                margin-left: 100px;

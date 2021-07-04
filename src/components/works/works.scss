@@ -2,6 +2,7 @@
 
 
 .works{
+    overflow: scroll;
     background-image: 	url("https://www.w3schools.com/howto/img_parallax.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -36,6 +37,7 @@
         }
     }
     .slider{
+        
         height:450px;
         display:flex;
         position:absolute;
@@ -46,13 +48,20 @@
             height: 100vh;
             flex-direction: column;
             justify-content: center;
+            margin-top: 80px;
+            overflow-y: scroll;
+            scroll-behavior: smooth;
         }
       
         
         .container{
+
             border-radius: 10% 0% 25% 25%;
             border-top-left-radius: 40%;
             background-color: rgb(170, 145, 5);
+            @include mobile{
+                border-radius: 0%;
+            }
            
            width:100vw;
            display: flex;
@@ -60,69 +69,54 @@
            justify-content: center;
          
            .item{
-               background-color: azure;
+            
+               background-color:lightyellow;
                height: 100%;
                border-radius: 20px;
                width: 900px;
                display: flex;
                align-items: center;
                justify-content: center;
+               overflow: scroll;
                @include mobile{
+        
                    width: 90%;
                    height: 100px;
                    margin: 5px 0px;
+                   border-radius: 0px;
                }
                .left{
-                      height: 80%;
+               
+                      height: 100%;
+                      width: auto;
                       flex:5;
+                      display: flex;
+                      flex-direction: column;
                       margin-left: 20px;
                       flex-wrap: wrap;
                       flex-direction: column;
                       @include mobile{
                           margin: 2px;
                       }
-                     
-                      .leftContainer{
-                          width:90%;
-                          height:100%;
-                          display: flex;
-                          flex-direction: column;
-                          justify-content: space-between;
-                         
-                          .imgContainer{
-                              width: 40px;
-                              background-color: white;
-                              border-radius: 50%;
-                              background-color: coral;
-                              display: flex;
-                              align-items: center;
-                              justify-content: center;
-                              
-                              
-                              img{
-                                  transform: rotateY(10 deg);
-                                  width:25px;
-                                  @include mobile{
-                                    display: none;
-                                }
-                            
-                              }
-                          }
-                          h2
+                      .content{
+                          overflow: scroll;
+                          flex:5;
+                      h2
                           {
                             font-size: 30px;
                             font-weight: 600;
                             color: darkblue;
-                            width: fit-content;
-                            text-overflow: ellipsis;
+                           margin-top: revert;
                             margin-bottom: 20px;
+
                             text-decoration: underline;
                             z-index: 2;
                             word-wrap: break-word;
                             @include mobile{
                                 font-size: 10px;
                                 font-weight: 400;
-                                height: 100%;
+                             
+                                margin-left: 3px;
                             }
                           }
                        
@@ -130,13 +124,53 @@
                               height: 100%;
                               font-size: 18px;
                               color:black;
-                              @include mobile{
-                                font-size: 5px;
-                                font-weight: 200;
+                              margin: 0 auto;
+                              h1{
+                                float:inline-end;
+                                color: black;
+
+                                z-index: 2;
+                                margin-top: 80px;
                             }
-                          }
-                      }
-               }
+                              @include mobile{
+                                font-size: 8px;
+                                font-weight: 200;
+                              
+                            }
+                           
+                        }
+                    }
+                            .buttons{
+                                
+                                flex: 2;
+                                display: flex;
+                                flex-direction: row;
+                                height: 20%;
+                                flex-wrap: wrap;
+                                padding: 0;
+                                @include mobile{
+                                    display: none;
+                                }
+                                
+                                Button{
+                                    height: 40px;
+                                    margin-left: 3px;
+                                   
+                                    font-weight:300;
+                                    color:blue;
+                                    width: auto;
+                                 
+                                }
+                            }
+                     
+                              
+                            
+                        
+                    }
+                         
+                          
+                      
+               
                .right{
                    height:80%;
                    flex:8;
@@ -150,10 +184,11 @@
                     
                    }
                }
-           }
-   
+            }
         }
+           }
+        }
+   
     
      
-    }
-}
+  
