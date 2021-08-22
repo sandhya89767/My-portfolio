@@ -1,4 +1,4 @@
 export default  {
-    USER_ID: `user_twJMhT1XLr7XXXXXXXXXX`, //userID
-    TEMPLATE_ID: `hexpower_temp`,         //templateID
+    USER_ID: `uer id`, //userID
+    TEMPLATE_ID: `template id`,         //templateID
     };
