@@ -5,10 +5,10 @@ import SchoolIcon from '@material-ui/icons/School';
 function About() {
     return (
         <div className="about" id="about" >
-        <div class="container">
+        <div className="container">
          
          <div className="left">
-hii
+
          </div>
                {/* <h1 id="s">ABOUT <span id="t" style={{color:"blue"}}>ME</span></h1><br/> */}
                <img   src="http://3.bp.blogspot.com/-awcchP27iX4/VT_UiNcSzgI/AAAAAAAAF9g/kLTOjEnvBMg/s1600/About%2BMe%2BModel%2BMayhem.png" alt=""></img>
@@ -16,8 +16,7 @@ hii
                <div className="right">
                   
                </div>
-               
-    
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
         </div>
         <div className="middle">
         

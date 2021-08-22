@@ -1,6 +1,8 @@
 import "./topbar.scss"
-import PersonIcon from '@material-ui/icons/Person';
 import MailIcon from '@material-ui/icons/Mail';
+import { SocialIcon } from 'react-social-icons';
+
+import { VscGithub } from 'react-icons/vsc';
 
 export default function topbar({menu,setmenu}) {
     return (
@@ -9,14 +11,19 @@ export default function topbar({menu,setmenu}) {
               <div className="left">
                   <a href="#intro" className="logo"> Sandy</a>
                     <div className="itemContainer">
-                      <PersonIcon className="icon"/>
-                      <span>+91867</span>
+                      <VscGithub/>
+                       <span ><a href=" https://github.com/sandhya89767">https://github.com/sandhya89767</a></span>
+                     
+                      
 
                     </div>
                     <div className="itemContainer">
                       <MailIcon className="icon"/>
-                      <span>sandy134@gmail.com</span>
+                      <span><a href="sandhya.kumari89767@gmail.com">sandhya.kumari89767@gmail.com</a></span>
 
+                    </div>
+                    <div className="itemContainer" >
+                    <SocialIcon url="https://www.linkedin.com/in/sandhya-kumari-a2295118b/" />
                     </div>
 
               </div>

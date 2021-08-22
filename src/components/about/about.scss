@@ -1,24 +1,19 @@
 @import "../../global.scss";
 
-
-.about{
-   
- 
-    background-color:gray;
+.about {
+  background-color: gray;
   display: flex;
   background-repeat: no-repeat;
   background-size: cover;
   align-items: center;
   flex-direction: column;
   justify-content: center;
-overflow: scroll;
+  overflow: scroll;
 
-  
-   
   .container {
-    background-color:rgb(228, 228, 183);
-     flex:2;
-    text-align: center; 
+    background-color: rgb(228, 228, 183);
+    flex: 2;
+    text-align: center;
     height: 80%;
     display: flex;
     flex-direction: row;
@@ -26,236 +21,207 @@ overflow: scroll;
     align-items: center;
     background-repeat: no-repeat;
     background-size: cover;
-    
-    }
- .left{
-     background-color: black;
-     flex:2;
-     width: 100%;
-     margin-left: 20%;
-     height:5%;
-     
- }
- 
- img{
-     height: 98%;
-    
- }
-    
+  }
+  .left {
+    background-color: black;
+    flex: 2;
+    width: 100%;
+    margin-left: 20%;
+    height: 5%;
+  }
 
-    
-    .right{
-        width: 100%;
-        height: 5%;
-        background-color: black;
-        flex:3;
-        width: 100%;
-        margin-right: 20%;
+  img {
+    height: 98%;
+  }
+
+  .right {
+    width: 100%;
+    height: 5%;
+    background-color: black;
+    flex: 3;
+    width: 100%;
+    margin-right: 20%;
+  }
+  .middle {
+    width: 90%;
+    height: 100%;
+    flex: 4;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+
+    box-sizing: 50px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    //margin-bottom: 30px;
+
+    .content {
+      // background-color: rgb(206, 228, 206);
+
+      flex: 3;
+
+      height: 100%;
+      width: 100%;
+      border-radius: 10% 10% 10% 10%;
+      border-bottom-left-radius: 30%;
+
+      p {
+        img {
+          float: left;
+          height: 20%;
+          width: 20%;
+          transform: rotate(-5deg);
+          margin-right: 5px;
+          margin-bottom: 5px;
+          margin-left: 0px;
+          margin-top: 0px;
+          padding: 0;
+          @include mobile {
+            display: none;
+          }
+        }
+
+        color: rgb(228, 228, 183);
+        font-size: 18px;
+        font-family: "Courgette", cursive;
+        line-height: 1.6;
+        margin: 20px;
+        padding: 0;
+        word-spacing: 5px;
+        overflow: none;
+        @include mobile {
+          overflow: scroll;
+          -webkit-overflow-scrolling: touch;
+        }
+      }
     }
-    .middle{
-       
-        width:90%;
-        height: 100%;
-        flex:4;
-        border-top-left-radius: 10%;
-        border-top-right-radius: 10%;
-        border-bottom-left-radius: 10%;
-        border-bottom-right-radius: 10%;
-        
-        box-sizing: 50px 50px;
+  }
+  .bottom {
+    border-radius: 10% 10% 10% 10%;
+
+    background-color: rgb(228, 228, 183);
+
+    margin-top: 20px;
+
+    flex: 4;
+
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include mobile {
+      border-radius: 1%;
+      flex-direction: column;
+      overflow-y: scroll;
+      margin-top: 2px;
+    }
+
+    .bottomLeft {
+      @include mobile {
+        flex: 0;
+      }
+      h3 {
+        margin-left: 50px;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bolder;
+        font-size: 33px;
+
+        @include mobile {
+          display: none;
+          flex: 0;
+          margin-left: 10px;
+          font-weight: 300;
+          font-size: 13px;
+        }
+      }
+
+      flex: 1;
+
+      height: 100%;
+      width: 100%;
+      display: flex;
+
+      align-items: center;
+      flex-direction: column;
+      ul {
         display: flex;
         flex-direction: row;
-        justify-content: center;
-        align-items:center;
-       
-        
-    .content{
-       // background-color: rgb(206, 228, 206);
-      
-        flex:3;
-       
-        
-       
-        height: 100%;
+        margin: 10px;
+        @include mobile {
+          margin: 1px;
+        }
+
+        li {
+          color: blue;
+          margin: 10px;
+          @include mobile {
+            margin: 1px;
+          }
+
+          img {
+            width: 100%;
+            height: 100%;
+            @include mobile {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+    .bottomRight {
+      margin-left: 100px;
+      margin-top: 40px;
+      @include mobile {
+        margin-left: 2px;
+        font-size: 13px;
+        font-weight: 100;
+      }
+    }
+    h1 {
+      color: black;
+
+      flex: 2;
+      color: blue (38, 0, 255);
+      height: 100%;
+      width: 100%;
+      font-weight: 800;
+      @include mobile {
         width: 100%;
-        border-radius: 10% 10% 10% 10%;
-        border-bottom-left-radius: 30%;
-        
-       
-       
-        p{
-            img{
-                float: left;
-                height: 20%;
-                width: 20%;
-                transform:rotate(-5deg);
-                margin-right: 5px;
-                margin-bottom: 5px;
-                margin-left: 0px;
-                margin-top:0px;
-                padding: 0;
-                @include mobile{
-                    display: none;
-                }
-
-            }
-            
-            color: rgb(228, 228, 183);
-           font-size: 18px;
-           font-family: 'Courgette', cursive;;
-           line-height: 1.6;
-            margin:20px;
-            padding: 0;
-            word-spacing: 5px;
-            overflow: none;
-           @include mobile{
-            overflow: scroll;
-            -webkit-overflow-scrolling: touch;
-           }
-     
-        
-            
-        }
-      
+        font-size: 18px;
+        height: 8%;
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+      }
     }
+    .education {
+      margin-left: 100px;
+      @include mobile {
+        margin-left: 2px;
+        scroll-behavior: smooth;
+        overflow: scroll;
+      }
+      h1 {
+        color: black;
+        @include mobile {
+          font-size: 13px;
+        }
+      }
+      #skills {
+        color: black;
+        font-size: 18px;
+      }
+      flex: 2;
+      color: blue (38, 0, 255);
 
+      font-weight: 800;
+      @include mobile {
+        font-weight: 300;
+      }
     }
-    .bottom{
-        border-radius: 10% 10% 10% 10% ;
-     
-
-      background-color: rgb(228, 228, 183);
-
-        margin-top: 20px;
-
-        flex:4;
-     
-        height: 100%;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        @include mobile{
-            border-radius: 1%;
-            flex-direction: column;
-           overflow-y: scroll;
-            margin-top: 2px;
-            
-           
-           
-        }
-       
-        .bottomLeft{
-            @include mobile{
-                flex:0;
-            }
-            h3{
-                margin-left: 50px;
-                color:black;
-                font-family: Arial, Helvetica, sans-serif;
-                font-weight: bolder;
-                font-size: 33px;
-                
-                @include mobile{
-                    display: none;
-                    flex:0;
-                    margin-left: 10px;
-                    font-weight: 300;
-                    font-size: 13px;
-                }
-            }
-            
-            flex:1;
-        
-            height: 100%;
-            width: 100%;
-            display: flex;
-            
-            align-items: center;
-            flex-direction: column;
-            ul{
-                display: flex;
-                flex-direction: row;
-                margin: 10px;
-                @include mobile{
-                    margin: 1px;
-                }
-               
-                li{
-                    color: blue;
-                    margin: 10px;
-                    @include mobile{
-                        margin: 1px;
-                    }
-                    
-                    img{
-                        width: 100%;
-                        height:100%;
-                        @include mobile{
-                            display: none;
-                        }
-                        
-
-                    }
-                }
-            }
-
-
-        }
-        .bottomRight{
-   margin-left: 100px;
-   @include mobile{
-       margin-left: 2px;
-    font-size: 13px;
-    font-weight: 100;
-   
-  
-    
-}
-}
-            h1{
-                color: black;
-            
-            flex:2;
-           color: blue
-           (38, 0, 255);
-            height: 100%;
-            width: 100%;
-            font-weight: 800;
-            @include mobile{
-                width: 100%;
-                font-size: 18px;
-                height: 8%;
-                overflow-y:scroll;
-                 scroll-behavior: smooth;
-            }
-         
-       
-
-        }
-        .education{
-            margin-left: 100px;
-            @include mobile{
-                margin-left: 2px;
-                scroll-behavior: smooth;
-                overflow: scroll;
-            }
-            h1{
-                color: black;
-                @include mobile{
-                    font-size: 13px;
-                }
-            }
-            flex:2;
-           color: blue
-           (38, 0, 255);
-            height: 100%;
-            width: 100%;
-            font-weight: 800;
-            @include mobile{
-                font-weight: 300;
-            }
-
-        }
-    }
+  }
 }
